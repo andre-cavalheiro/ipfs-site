@@ -17,7 +17,7 @@ export const Home = () => {
         <Particles params={particlesConfig} />
         */}
         <h3>Hello I'm</h3>
-        <h1>Pedro Torres</h1>
+        <h1>André Cavalheiro</h1>
         <Typewriter component={'span'}
           options={{
             delay: 50,
