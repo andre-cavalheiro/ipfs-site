@@ -1,0 +1,87 @@
+.education__icon {
+  font-size: 1.8rem;
+  margin-right: 0.25rem;
+}
+
+.education__data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.education__data--odd {
+  text-align: end;
+}
+
+.education__title {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--color-white);
+}
+
+.education__subtitle {
+  display: inline-block;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.education__hyperlink {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.education__calendar {
+  font-size: 1rem;
+  color: var(--color-light);
+}
+
+.education__calendar .education__calendar-icon {
+  font-size: 0.9rem;
+  margin-right: 0.3rem;
+}
+
+.education__rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+.education__line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--color-primary);
+  transform: translate(6px, -7px);
+}
+
+.education__logo {
+  display: inline;
+  width: 10rem;
+}
+
+.education__logo--saturate {
+  filter: invert(96%) sepia(37%) saturate(2%) hue-rotate(267deg)
+    brightness(103%) contrast(101%);
+}
+
+/* -- TABLETS - SMALL DEVICES -- */
+@media screen and (max-width: 600px) {
+  .education__logo {
+    width: 6rem;
+  }
+
+  .education__title {
+    font-size: 1rem;
+  }
+
+  .education__subtitle {
+    font-size: 0.9rem;
+  }
+
+  .education__calendar {
+    font-size: 0.75rem;
+  }
+}
