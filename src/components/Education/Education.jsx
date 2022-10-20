@@ -2,7 +2,7 @@ import React from 'react';
 import { BsCalendar3 } from 'react-icons/bs';
 import { FiLink } from 'react-icons/fi';
 
-import { ISEP_LOGO, VGTU_LOGO } from '../../data/education/index';
+import { IST_LOGO, DS_ACADEMY_LOGO, TSINGHUA_LOGO, LXMLS_LOGO } from '../../data/education/index';
 
 import './education.css';
 
@@ -14,18 +14,19 @@ export const Education = () => {
       <div className='education__container container'>
         <div className='education__sections'>
           <div className='education__content education__active'>
+            
             {/* EDUCATION 1 */}
             <div className='education__data'>
               <div className='education__data--odd'>
                 <span>
-                  <img
-                    src={VGTU_LOGO}
-                    alt='VGTU Logo'
+                <img
+                    src={LXMLS_LOGO}
+                    alt='Lisbon Machine Learning School Logo'
                     className='education__logo education__logo--saturate'
                   />
                 </span>
                 <h3 className='education__title'>
-                  BSc in Computer Engineering (Erasmus)
+                  Lisbon Machine Learning School
                 </h3>
                 <a
                   href='https://vilniustech.lt/index.php?lang=2'
@@ -33,11 +34,11 @@ export const Education = () => {
                   rel='noreferrer'
                   className='education__subtitle'
                 >
-                  Vilnius Gediminas Technical University, Lithuania
+                  Lisbon Machine Learning School, Lisbon, Portugal
                   <FiLink className='experience__hyperlink' />
                 </a>
                 <div className='education__calendar'>
-                  <BsCalendar3 className='education__calendar-icon'/> 09/2018 - 01/2019
+                  <BsCalendar3 className='education__calendar-icon'/> 08/2020 - 08/2020
                 </div>
               </div>
 
@@ -53,33 +54,138 @@ export const Education = () => {
 
               <div>
                 <span className='education__rounder'></span>
+                <span className='education__line'></span>
+              </div>
+
+              <div>
+                <span>
+                <img
+                    src={TSINGHUA_LOGO}
+                    alt='Tsinghua University Logo'
+                    className='education__logo education__logo--saturate'
+                  />
+                </span>
+                <h3 className='education__title'>
+                  M.Sc. in Computer Science and Engineering (exchange programme)
+                </h3>
+                <p>Expertise in Artificial Intelligence</p>
+                <a
+                  href='https://www.cs.tsinghua.edu.cn/csen/'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='education__subtitle'
+                >
+                  Tsinghua University, Beijing, China
+                  <FiLink className='experience__hyperlink' />
+                </a>
+                <div className='education__calendar'>
+                  <BsCalendar3 className='education__calendar-icon'/> 02/2019- 06/2019
+                </div>
+              </div>
+            </div>
+
+            {/* EDUCATION 3 */}
+            <div className='education__data'>
+              <div className='education__data--odd'>
+                <span>
+                <img
+                    src={IST_LOGO}
+                    alt='IST Logo'
+                    className='education__logo education__logo--saturate'
+                  />
+                </span>
+                <h3 className='education__title'>
+                  M.Sc. in Computer Science and Engineering
+                </h3>
+                <p>Expertise in Artificial Intelligence</p>
+                <a
+                  href='https://tecnico.ulisboa.pt/en/education/courses/masters-programmes/computer-science-and-engineering/'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='education__subtitle'
+                >
+                  Instituto Superior Técnico, Lisbon, Portugal
+                  <FiLink className='experience__hyperlink' />
+                </a>
+                <div className='education__calendar'>
+                  <BsCalendar3 className='education__calendar-icon'/> 09/2018 - 09/2021
+                </div>
+              </div>
+
+              <div>
+                <span className='education__rounder'></span>
+                <span className='education__line'></span>
+              </div>
+            </div>
+
+
+            {/* EDUCATION 4 */}
+            <div className='education__data'>
+              <div></div>
+
+              <div>
+                <span className='education__rounder'></span>
+                <span className='education__line'></span>
               </div>
 
               <div>
                 <span>
                   <img
-                    src={ISEP_LOGO}
-                    alt='ISEP Logo'
+                    src={DS_ACADEMY_LOGO}
+                    alt='Lisbon Datascience Academy Logo'
                     className='education__logo education__logo--saturate'
                   />
                 </span>
                 <h3 className='education__title'>
-                  Bachelor's Degree in Informatics Engineering
+                  Data Science Starters Academy
                 </h3>
                 <a
-                  href='https://www.isep.ipp.pt/'
+                  href='https://www.lisbondatascience.org/'
                   target='_blank'
                   rel='noreferrer'
                   className='education__subtitle'
                 >
-                  Polytechnic Institute of Porto, Portugal
+                  Lisbon Datascience Academy, Lisbon Portugal
                   <FiLink className='experience__hyperlink' />
                 </a>
                 <div className='education__calendar'>
-                  <BsCalendar3 className='education__calendar-icon'/> 09/2014- 09/2019
+                  <BsCalendar3 className='education__calendar-icon'/> 03/2018- 08/2018
                 </div>
               </div>
             </div>
+
+            {/* EDUCATION 5 */}
+            <div className='education__data'>
+              <div className='education__data--odd'>
+                <span>
+                  <img
+                    src={IST_LOGO}
+                    alt='IST Logo'
+                    className='education__logo education__logo--saturate'
+                  />
+                </span>
+                <h3 className='education__title'>
+                  B.Sc. in Eletrotecnical and Computer Engineering
+                </h3>
+                <a
+                  href='https://tecnico.ulisboa.pt/en/education/courses/undergraduate-programmes/electrical-and-computer-engineering/'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='education__subtitle'
+                >
+                  Instituto Superior Técnico, Lisbon, Portugal
+                  <FiLink className='experience__hyperlink' />
+                </a>
+                <div className='education__calendar'>
+                  <BsCalendar3 className='education__calendar-icon'/> 09/2015 - 06/2018
+                </div>
+              </div>
+
+              <div>
+                <span className='education__rounder'></span>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

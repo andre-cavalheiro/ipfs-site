@@ -3,11 +3,13 @@ import { BsCalendar3 } from "react-icons/bs";
 import { FiLink } from "react-icons/fi";
 
 import {
-  CESAE_LOGO,
+  INESC_LOGO,
   DATAMON_LOGO,
   ETM_LOGO,
-  ING_LOGO,
-  SPMS_LOGO,
+  RELY_LOGO,
+  GITCOIN_LOGO,
+  INDEXED_LOGO,
+  IST_LOGO,
 } from "../../data/experience/index";
 import "./experience.css";
 
@@ -29,23 +31,24 @@ export const Experience = () => {
               <div>
                 <span>
                   <img
-                    src={ING_LOGO}
-                    alt="ING Logo"
+                    src={RELY_LOGO}
+                    alt="Rely.io Logo"
                     className="experience__logo experience__logo--saturate"
                   />
                 </span>
-                <h3 className="experience__title">DevOps Engineer</h3>
+                <h3 className="experience__title">Data Scientist | Product Engineer</h3>
+                <p>Engineering Founder</p>
                 <a
-                  href="https://www.ing.com/Home.htm"
+                  href="https://www.rely.io"
                   target="_blank"
                   rel="noreferrer"
                   className="experience__subtitle"
                 >
-                  ING Group
+                  Rely.io
                   <FiLink className="experience__hyperlink" />
                 </a>
                 <div className="experience__calendar">
-                  <BsCalendar3 className="experience__calendar-icon" /> 07/2022
+                  <BsCalendar3 className="experience__calendar-icon" /> 02/2021
                   - Present
                 </div>
               </div>
@@ -56,24 +59,23 @@ export const Experience = () => {
               <div className="experience__data--odd">
                 <span>
                   <img
-                    src={CESAE_LOGO}
-                    alt="CESAE Logo"
+                    src={INDEXED_LOGO}
+                    alt="Indexed Finance Logo"
                     className="experience__logo experience__logo--saturate"
                   />
                 </span>
-                <h3 className="experience__title">IT Trainer</h3>
+                <h3 className="experience__title">Freelancer | Backend Developer</h3>
                 <a
-                  href="https://www.cesaedigital.pt/"
+                  href="https://indexed.finance/"
                   target="_blank"
                   rel="noreferrer"
                   className="experience__subtitle"
                 >
-                  CESAE - Training Center for Technical Certification
+                  Indexed Finance
                   <FiLink className="experience__hyperlink" />
                 </a>
                 <div className="experience__calendar">
-                  <BsCalendar3 className="experience__calendar-icon" /> 05/2022
-                  - Present
+                  <BsCalendar3 className="experience__calendar-icon" /> 05/2020 - 05/2021
                 </div>
               </div>
 
@@ -93,24 +95,23 @@ export const Experience = () => {
               <div>
                 <span>
                   <img
-                    src={SPMS_LOGO}
-                    alt="SPMS Logo"
+                    src={INESC_LOGO}
+                    alt="INESC-ID Logo"
                     className="experience__logo experience__logo--saturate"
                   />
                 </span>
-                <h3 className="experience__title">Software Consultant</h3>
+                <h3 className="experience__title">Researcher</h3>
                 <a
-                  href="https://www.spms.min-saude.pt/2020/07/pem/#googtrans(pt%7Cen)"
+                  href="https://www.inesc-id.pt/"
                   target="_blank"
                   rel="noreferrer"
                   className="experience__subtitle"
                 >
-                  Shared Services for Portuguese Ministry of Health
+                  INESC-id Research Center
                   <FiLink className="experience__hyperlink" />
                 </a>
                 <div className="experience__calendar">
-                  <BsCalendar3 className="experience__calendar-icon" /> 05/2020
-                  - 06/2022
+                  <BsCalendar3 className="experience__calendar-icon" /> 05/2020 - 06/2021
                 </div>
               </div>
             </div>
@@ -120,63 +121,32 @@ export const Experience = () => {
               <div className="experience__data--odd">
                 <span>
                   <img
-                    src={DATAMON_LOGO}
-                    alt="Datamon Logo"
+                    src={IST_LOGO}
+                    alt="IST Logo"
                     className="experience__logo experience__logo--saturate"
                   />
                 </span>
-                <h3 className="experience__title">Software Consultant</h3>
+                <h3 className="experience__title">Fullstack Developer</h3>
                 <a
-                  href="https://datamonplus.com/pt-pt/"
+                  href="https://si.tecnico.ulisboa.pt/en/"
                   target="_blank"
                   rel="noreferrer"
                   className="experience__subtitle"
                 >
-                  DatamonPlus
+                  Informatic Services of Instituto Superior Tecnico
                   <FiLink className="experience__hyperlink" />
                 </a>
                 <div className="experience__calendar">
-                  <BsCalendar3 className="experience__calendar-icon" /> 11/2019
-                  - 05/2020
+                  <BsCalendar3 className="experience__calendar-icon" /> 09/2017 - 01/2019
                 </div>
               </div>
 
               <div>
                 <span className="experience__rounder"></span>
-                <span className="experience__line"></span>
               </div>
             </div>
 
-            {/* QUALIFICACAO 5 */}
-            <div className="experience__data">
-              <div></div>
-              <div>
-                <span className="experience__rounder"></span>
-              </div>
-              <div>
-                <span>
-                  <img
-                    src={ETM_LOGO}
-                    alt="ETM Logo"
-                    className="experience__logo"
-                  />
-                </span>
-                <h3 className="experience__title">Software Consultant</h3>
-                <a
-                  href="https://textilmaganha.com/en/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="experience__subtitle"
-                >
-                  Maganha Textile
-                  <FiLink className="experience__hyperlink" />
-                </a>
-                <div className="experience__calendar">
-                  <BsCalendar3 className="experience__calendar-icon" /> 02/2019
-                  - 10/2019
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>

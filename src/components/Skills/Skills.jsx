@@ -1,47 +1,42 @@
 import React, { useState } from 'react';
 import { AiOutlineTool } from 'react-icons/ai';
 import { BsGearWideConnected } from 'react-icons/bs';
-import { FaAward } from 'react-icons/fa';
-import { VscDebugDisconnect } from 'react-icons/vsc';
 import { HiDatabase, HiCubeTransparent } from 'react-icons/hi';
-import { MdWeb } from 'react-icons/md';
 import { MdExpandMore } from 'react-icons/md';
 
 import {
   backend,
-  certifications,
   database,
-  dataProtocol,
-  frontend,
   patterns,
   tools,
+  machineLearning,
+  instrumentation,
 } from '../../data/skills/index';
 
 import './skills.css';
 
 export const Skills = () => {
-  const [showFrontend, setShowFrontend] = useState(false);
+  const [showMachineLearning, setShowMachineLearning] = useState(false);
   const [showBackend, setShowBackend] = useState(false);
+  const [showInstrumentation, setShowInstrumentation] = useState(false);
   const [showDatabase, setShowDatabase] = useState(false);
-  const [showProtocol, setShowProtocol] = useState(false);
   const [showMethodPatterns, setShowMethodPatterns] = useState(false);
   const [showTools, setShowTools] = useState(false);
-  const [showCertifications, setShowCertifications] = useState(false);
 
-  const handleFrontend = () => {
-    setShowFrontend(!showFrontend);
+  const handleMachineLearning = () => {
+    setShowMachineLearning(!showMachineLearning);
   };
 
   const handleBackend = () => {
     setShowBackend(!showBackend);
   };
 
-  const handleDatabase = () => {
-    setShowDatabase(!showDatabase);
+  const handleInstrumentation = () => {
+    setShowInstrumentation(!showInstrumentation);
   };
 
-  const handleProtocol = () => {
-    setShowProtocol(!showProtocol);
+  const handleDatabase = () => {
+    setShowDatabase(!showDatabase);
   };
 
   const handleMethodPatterns = () => {
@@ -52,29 +47,24 @@ export const Skills = () => {
     setShowTools(!showTools);
   };
 
-  const handleCertifications = () => {
-    setShowCertifications(!showCertifications);
-  };
-
   return (
     <section id='skills'>
       <h2>Skills</h2>
       <div className='container skill__container'>
-        {/* FRONTEND */}
+        
+        {/* MACHINE LEARNING & DATA SCIENCE */}
         <div className='skill'>
-          <div className='skill__header' onClick={handleFrontend}>
+          <div className='skill__header' onClick={handleMachineLearning}>
             <div className='skill__description'>
-              <MdWeb />
-              <h4>Frontend Development</h4>
+              <BsGearWideConnected />
+              <h4>Machine Learning & Datascience</h4>
             </div>
-            <span
-              className={`skill__arrow ${showFrontend ? 'show-items' : ''}`}
-            >
+            <span className={`skill__arrow ${showMachineLearning ? 'show-items' : ''}`}>
               <MdExpandMore />
             </span>
           </div>
-          <div className={`skill__items ${showFrontend ? 'show-items' : ''}`}>
-            {frontend.map(({ id, technology, level }) => {
+          <div className={`skill__items ${showMachineLearning ? 'show-items' : ''}`}>
+            {machineLearning.map(({ id, technology, level }) => {
               return (
                 <div className='skill__item' key={id}>
                   <h3>{technology}</h3>
@@ -108,6 +98,29 @@ export const Skills = () => {
           </div>
         </div>
 
+        {/* Instrumentation */}
+        <div className='skill'>
+          <div className='skill__header' onClick={handleInstrumentation}>
+            <div className='skill__description'>
+              <BsGearWideConnected />
+              <h4>Monitoring & Analytics</h4>
+            </div>
+            <span className={`skill__arrow ${showInstrumentation ? 'show-items' : ''}`}>
+              <MdExpandMore />
+            </span>
+          </div>
+          <div className={`skill__items ${showInstrumentation ? 'show-items' : ''}`}>
+            {instrumentation.map(({ id, technology, level }) => {
+              return (
+                <div className='skill__item' key={id}>
+                  <h3>{technology}</h3>
+                  <h5>{level}</h5>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
         {/* DATABASE */}
         <div className='skill'>
           <div className='skill__header' onClick={handleDatabase}>
@@ -123,31 +136,6 @@ export const Skills = () => {
           </div>
           <div className={`skill__items ${showDatabase ? 'show-items' : ''}`}>
             {database.map(({ id, technology, level }) => {
-              return (
-                <div className='skill__item' key={id}>
-                  <h3>{technology}</h3>
-                  <h5>{level}</h5>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* DATA PROTOCOL */}
-        <div className='skill'>
-          <div className='skill__header' onClick={handleProtocol}>
-            <div className='skill__description'>
-              <VscDebugDisconnect />
-              <h4>Data Protocol</h4>
-            </div>
-            <span
-              className={`skill__arrow ${showProtocol ? 'show-items' : ''}`}
-            >
-              <MdExpandMore />
-            </span>
-          </div>
-          <div className={`skill__items ${showProtocol ? 'show-items' : ''}`}>
-            {dataProtocol.map(({ id, technology, level }) => {
               return (
                 <div className='skill__item' key={id}>
                   <h3>{technology}</h3>
@@ -206,50 +194,6 @@ export const Skills = () => {
           </div>
         </div>
 
-        {/* CERTIFICATION */}
-        <div className='skill'>
-          <div className='skill__header' onClick={handleCertifications}>
-            <div className='skill__description'>
-              <FaAward />
-              <h4>Certifications</h4>
-            </div>
-            <span
-              className={`skill__arrow ${
-                showCertifications ? 'show-items' : ''
-              }`}
-            >
-              <MdExpandMore />
-            </span>
-          </div>
-          <div
-            className={`skill__items cert__items ${
-              showCertifications ? 'show-items' : ''
-            }`}
-          >
-            {certifications.map(
-              ({ id, logo, title, entity, descr, date, credentialURL }) => {
-                return (
-                  <div className='skill__cert' key={id}>
-                    <img src={logo}></img>
-                    <div className='skill__cert-details'>
-                      <h3 className='skill__cert-title'>{title}</h3>
-                      <h4 className='skill__cert-entity'>{entity}</h4>
-                      {descr}
-                      <h5 className='skill__cert-date'>{date}</h5>
-                      <a
-                        href={credentialURL}
-                        target='_blank'
-                        className='skill__cert-view'
-                      >
-                        Show Credencial
-                      </a>
-                    </div>
-                  </div>
-                );
-              }
-            )}
-          </div>
-        </div>
       </div>
     </section>
   );

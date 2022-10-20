@@ -1,24 +1,36 @@
+let it = 0;
+
 const database = [
   {
-    id: "D1",
-    technology: "MySQL",
-    level: "4+ Years",
-  },
-  {
-    id: "D2",
-    technology: "PL/SQL",
-    level: "4+ Years",
-  },
-  {
-    id: "D3",
+    id: `D${it++}`,
     technology: "PostgreSQL",
-    level: "4+ Years",
+    level: "2+ Years",
   },
   {
-    id: "D4",
+    id: `D${it++}`,
     technology: "MongoDB",
-    level: "1 Year",
+    level: "2+ Years",
   },
+  {
+    id: `D${it++}`,
+    technology: "TimescaleDB",
+    level: "2+ Years",
+  },
+  {
+    id: `D${it++}`,
+    technology: "MySQL",
+    level: "2+ Years",
+  },
+  {
+    id: `D${it++}`,
+    technology: "Neo4j",
+    level: "1+ Years",
+  },
+  {
+    id: `D${it++}`,
+    technology: "Amazon Timestream",
+    level: "6 months",
+  }
 ];
 
 export default database;

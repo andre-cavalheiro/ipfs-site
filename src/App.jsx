@@ -21,7 +21,6 @@ const App = () => {
       <Skills />
       <Experience />
       <Education />
-      <Portfolio />
       <Contact />
       <Footer />
     </div>

@@ -1,28 +1,25 @@
+let it = 0;
+
 const patterns = [
   {
-    id: 'P1',
+    id: `P${it++}`,
     technology: 'CI/CD',
     level: '4+ Years',
   },
   {
-    id: 'P2',
-    technology: 'OOP',
-    level: '4+ Years',
+    id: `P${it++}`,
+    technology: 'SRE',
+    level: '2+ Years',
   },
   {
-    id: 'P3',
-    technology: 'MVC',
-    level: '4+ Years',
-  },
-  {
-    id: 'P4',
-    technology: 'Scrum',
-    level: '4+ Years',
-  },
-  {
-    id: 'P5',
+    id: `P${it++}`,
     technology: 'Agile',
     level: '2+ Years',
+  },
+  {
+    id: `P${it++}`,
+    technology: 'Shape Up',
+    level: '1+ Years',
   },
 ];
 

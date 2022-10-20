@@ -1,33 +1,25 @@
+let it = 0;
+
 const backend = [
   {
-    id: "B1",
-    technology: "NodeJS",
+    id: `B${it++}`,
+    technology: "Python",
     level: "4+ Years",
   },
   {
-    id: "B2",
-    technology: "Java 8",
-    level: "4+ Years",
-  },
-  {
-    id: "B3",
+    id: `B${it++}`,
     technology: "AWS",
-    level: "1 Year",
-  },
-  {
-    id: "B4",
-    technology: "Express.js",
-    level: "1 Year",
-  },
-  {
-    id: "B5",
-    technology: "Spring",
-    level: "4 Years",
-  },
-  {
-    id: "B6",
-    technology: "Hibernate",
     level: "2+ Years",
+  },
+  {
+    id: `B${it++}`,
+    technology: "NodeJS (Express)",
+    level: "2+ Years",
+  },
+  {
+    id: `B${it++}`,
+    technology: "PHP (Laravel)",
+    level: "6 months",
   },
 ];
 

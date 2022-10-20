@@ -1,9 +1,9 @@
 import { DiPython, DiNodejs } from 'react-icons/di';
-import { SiPostgresql, SiNumpy } from 'react-icons/si';
+import { SiPostgresql, SiPandas } from 'react-icons/si';
 
 export const outerCircleIcons = [
   <DiPython />,
-  <SiNumpy />,
+  <SiPandas />,
   <SiPostgresql />,
   <DiNodejs />,
 ];
@@ -17,15 +17,16 @@ export const aboutMeData = [
   },
 ];
 
+let it = 0;
 export const aboutMeList = [
   {
-    id: 1,
-    title: '4+',
-    descr: 'Years of Experience',
+    id: it++,
+    title: '1',
+    descr: 'Publication',
   },
   {
-    id: 2,
-    title: '8+',
-    descr: 'Projects from Scratch',
+    id: it++,
+    title: '4+',
+    descr: 'Years of Experience',
   }
 ];

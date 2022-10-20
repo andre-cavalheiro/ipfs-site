@@ -1,49 +1,47 @@
+let it = 0;
+
 const tools = [
     {
-      id: "T1",
+      id: `T${it++}`,
       technology: "Git",
       level: "4+ Years",
     },
     {
-      id: "T2",
-      technology: "BitBucket",
-      level: "4+ Years",
-    },
-    {
-      id: "T3",
-      technology: "SVN",
-      level: "4+ Years",
-    },
-    {
-      id: "T4",
-      technology: "Jira",
-      level: "4+ Years",
-    },
-    {
-      id: "T5",
+      id: `T${it++}`,
       technology: "Postman",
       level: "4+ Years",
     },
     {
-      id: "T6",
-      technology: "SoapUI",
-      level: "2 Years",
+      id: `T${it++}`,
+      technology: "Pycharm",
+      level: "4+ Years",
     },
     {
-      id: "T7",
-      technology: "Maven",
-      level: "2 Years",
+      id: `T${it++}`,
+      technology: "Webstorm",
+      level: "2+ Years",
     },
     {
-      id: "T8",
-      technology: "Weblogic",
-      level: "2 Years",
+      id: `T${it++}`,
+      technology: "Notion (power user)",
+      level: "2+ Years",
     },
     {
-      id: "T9",
-      technology: "Liferay",
-      level: "2 Years",
+      id: `T${it++}`,
+      technology: "RoamResearch",
+      level: "2+ Years",
     },
+    {
+      id: `T${it++}`,
+      technology: "Weights & Biases",
+      level: "1+ Years",
+    },
+    {
+      id: `T${it++}`,
+      technology: "Jira",
+      level: "1+ Years",
+    },
+
   ];
   
   export default tools;

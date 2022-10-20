@@ -14,9 +14,9 @@ export const Contact = () => {
           <article className='contact__option contact__option-onDesktop'>
             <MdOutlineEmail className='contact__option-icon' />
               <h4>Email</h4>
-              <h5>pedro.ts.torres@gmail.com</h5>
+              <h5>andre.cavalheiro13@gmail.com</h5>
               <a
-                href='mailto:pedro.ts.torres@gmail.com'
+                href='andre.cavalheiro13@gmail.com'
                 target='_blank'
                 rel='noreferrer'
               >
@@ -26,17 +26,22 @@ export const Contact = () => {
           <article className='contact__option'>
             <IoLogoWhatsapp className='contact__option-icon' />
               <h4>WhatsApp</h4>
-              <h5>+351 914 666 034</h5>
+              <h5>+351 932 157 434</h5>
               <a
-                href='https://wa.me/351914666034'
+                href='https://wa.me/351932157434'
                 target='_blank'
                 rel='noreferrer'
               >
-                Write me
               </a>
           </article>
         </div>
-        {/* END OF CONTACT OPTIONS */}
+      </div>
+    </section>
+  );
+};
+
+/*
+        {END OF CONTACT OPTIONS }
         <form action='https://formspree.io/f/xlezwqkd' method='POST' target='_blank'>
           <input type='text' name='name' placeholder='Name' required />
           <input type='email' name='email' placeholder='Email' required />
@@ -45,7 +50,4 @@ export const Contact = () => {
             Send Message
           </button>
         </form>
-      </div>
-    </section>
-  );
-};
+*/

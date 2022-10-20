@@ -62,11 +62,6 @@
   width: 10rem;
 }
 
-.education__logo--saturate {
-  filter: invert(96%) sepia(37%) saturate(2%) hue-rotate(267deg)
-    brightness(103%) contrast(101%);
-}
-
 /* -- TABLETS - SMALL DEVICES -- */
 @media screen and (max-width: 600px) {
   .education__logo {

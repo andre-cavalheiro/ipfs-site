@@ -3,9 +3,9 @@ section#contact {
 }
 
 .container.contact__container {
-  width: 74%;
+  width: 40%;
   display: grid;
-  grid-template-columns: 31% 64%;
+  grid-template-columns: 100% 0%;
   gap: 5%;
 }
 
@@ -39,30 +39,6 @@ section#contact {
   margin-top: 0.7rem;
   display: inline-block;
   font-size: 0.8rem;
-}
-
-/* -- FORM -- */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.3rem;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  background: transparent;
-  border: 2px solid var(--color-primary-variant);
-  resize: none;
-  color: var(--color-white);
-  font-family: 'Poppins';
-  overflow-y: scroll;
-}
-
-textarea {
-  height: 10.1rem;
 }
 
 /* -- TABLETS - MEDIUM DEVICES -- */

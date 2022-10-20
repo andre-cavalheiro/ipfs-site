@@ -29,7 +29,7 @@ h3 {
 .home__socials {
   font-size: 1.6rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: line;
   align-items: center;
   gap: 0.8rem;
   position: absolute;
